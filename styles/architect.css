@@ -25,6 +25,12 @@
   cursor: pointer;
 }
 
+.section-title{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #131313;
+}
+
 
 
 /* header styles */
@@ -85,7 +91,6 @@ main{
   max-width: 1440px;
   margin: 0 auto;
 }
-
 .teams-section{
   display: flex;
   justify-content: space-between;
@@ -94,23 +99,52 @@ main{
   gap: 150px;
 }
 
-.teams-content h1{
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #131313;
-}
 .teams-content h1 .gray{
   color: #727272;
 }
 .teams-content h1 .orange{
   color: #FF900E;
 }
-
-
 .teams-section .teams-images{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+
+/* feature section styles */
+
+/* facts section styles */
+.facts-section{
+  margin: 0 50px;
+}
+.facts-section > p{
+  padding-right: 500px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.achievements{
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.achievements-container{
+  border: 1px solid #FF900E;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px 50px;
+}
+.achievements-container h2{
+  color: #424242;
+  font-size: 3rem;
+  padding: 10px;
+}
+.achievements-container p{
+  color: #727272;
+  font-size: 1.25rem;
+  padding: 0px 20px;
 }
 
 
@@ -146,6 +180,16 @@ main{
     margin: 150px 20px;
   }
 
+  .achievements{
+    flex-direction: column;
+  }
+  .facts-section > p{
+    padding-right: 0px;
+  }
+  .facts-section{
+    margin: 150px 20px;
+  }
+
 
 }
 
@@ -171,5 +215,14 @@ main{
   .teams-section{
     margin: 150px 50px;
   }
+
+  .achievements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .facts-section > p{
+    padding-right: 0px;
+  }
+
 
 }
