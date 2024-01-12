@@ -78,3 +78,48 @@ header {
 .banner-image img{
   width: 100%;
 }
+
+
+
+
+
+
+/* responsive queries */
+
+/* small devices */
+
+@media screen and (max-width: 576px) {
+
+  header{
+    padding: 50px 20px 50px 20px;
+  }
+  .nav-bar{
+    flex-direction: column;
+  }
+  .nav-bar .title{
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .banner-content .banner-title {
+    font-size: 25px;
+  }
+
+
+}
+
+/* medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header{
+    padding: 50px;
+  }
+  .nav-bar{
+    flex-direction: column;
+  }
+  .nav-bar .title{
+    margin-bottom: 10px;
+  }
+  .banner-content .banner-title {
+    font-size: 30px;
+  }
+}
