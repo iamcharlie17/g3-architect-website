@@ -79,8 +79,39 @@ header {
   width: 100%;
 }
 
+/* feature section styles */
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.teams-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px auto;
+  gap: 150px;
+}
+
+.teams-content h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #131313;
+}
+.teams-content h1 .gray{
+  color: #727272;
+}
+.teams-content h1 .orange{
+  color: #FF900E;
+}
 
 
+.teams-section .teams-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
 
 
