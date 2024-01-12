@@ -135,6 +135,17 @@ main{
     font-size: 25px;
   }
 
+  .teams-section{
+    flex-direction: column-reverse;
+  }
+  .teams-section .teams-images{
+    display: flex;
+    flex-direction: column;
+  }
+  .teams-section{
+    margin: 150px 20px;
+  }
+
 
 }
 
@@ -153,4 +164,12 @@ main{
   .banner-content .banner-title {
     font-size: 30px;
   }
+
+  .teams-section{
+    flex-direction: column-reverse;
+  }
+  .teams-section{
+    margin: 150px 50px;
+  }
+
 }
