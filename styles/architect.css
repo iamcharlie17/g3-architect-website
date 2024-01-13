@@ -164,6 +164,18 @@ main {
   height: 50px;
 }
 
+/* footer stylesd */
+footer {
+  border-radius: 10px;
+  background: #fff4e7;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+footer p{
+  padding: 3rem;
+}
+
 /* responsive queries */
 
 /* small devices */
