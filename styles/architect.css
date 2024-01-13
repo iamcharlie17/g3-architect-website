@@ -6,7 +6,7 @@
 }
 
 /* commmon styles */
-.primary-description{
+.primary-description {
   color: #727272;
   font-size: 1.3rem;
   font-weight: 400;
@@ -25,13 +25,11 @@
   cursor: pointer;
 }
 
-.section-title{
+.section-title {
   font-size: 3rem;
   margin-bottom: 20px;
   color: #131313;
 }
-
-
 
 /* header styles */
 header {
@@ -81,17 +79,17 @@ header {
   margin-bottom: 20px;
 }
 
-.banner-image img{
+.banner-image img {
   width: 100%;
 }
 
 /* feature section styles */
 
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
-.teams-section{
+.teams-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,69 +97,85 @@ main{
   gap: 150px;
 }
 
-.teams-content h1 .gray{
+.teams-content h1 .gray {
   color: #727272;
 }
-.teams-content h1 .orange{
-  color: #FF900E;
+.teams-content h1 .orange {
+  color: #ff900e;
 }
-.teams-section .teams-images{
+.teams-section .teams-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-
 /* feature section styles */
 
 /* facts section styles */
-.facts-section{
+.facts-section {
   margin: 0 50px;
 }
-.facts-section > p{
+.facts-section > p {
   padding-right: 500px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.achievements{
+.achievements {
   display: flex;
   justify-content: space-around;
   gap: 100px;
   margin-top: 50px;
   margin-bottom: 150px;
 }
-.achievements-container{
-  border: 1px solid #FF900E;
+.achievements-container {
+  border: 1px solid #ff900e;
   border-radius: 10px;
   text-align: center;
   padding: 50px 50px;
 }
-.achievements-container h2{
+.achievements-container h2 {
   color: #424242;
   font-size: 3rem;
   padding: 10px;
 }
-.achievements-container p{
+.achievements-container p {
   color: #727272;
   font-size: 1.25rem;
   padding: 0px 20px;
 }
 
-
+/* sponsor section styles */
+.sponsor-section {
+  margin-bottom: 150px;
+}
+.sponsor-content {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.sponsor-content .primay-description {
+  padding: 20px 22rem;
+}
+.sponsor-images {
+  display: flex;
+  justify-content: space-around;
+}
+.sponsor-images img {
+  mix-blend-mode: luminosity;
+  height: 50px;
+}
 
 /* responsive queries */
 
 /* small devices */
 
 @media screen and (max-width: 576px) {
-
-  header{
+  header {
     padding: 50px 20px 50px 20px;
   }
-  .nav-bar{
+  .nav-bar {
     flex-direction: column;
   }
-  .nav-bar .title{
+  .nav-bar .title {
     font-size: 2rem;
     margin-bottom: 10px;
   }
@@ -169,60 +183,81 @@ main{
     font-size: 25px;
   }
 
-  .teams-section{
+  .teams-section {
     flex-direction: column-reverse;
   }
-  .teams-section .teams-images{
+  .teams-section .teams-images {
     display: flex;
     flex-direction: column;
   }
-  .teams-section{
+  .teams-section {
     margin: 150px 20px;
   }
 
-  .achievements{
+  .achievements {
     flex-direction: column;
   }
-  .facts-section > p{
+  .facts-section > p {
     padding-right: 0px;
   }
-  .facts-section{
+  .facts-section {
     margin: 150px 20px;
   }
 
-
+  .sponsor-content .primay-description {
+    padding: 10px;
+  }
+  .sponsor-images {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 150px;
+  }
+  .sponsor-content {
+    margin: 0;
+  }
 }
 
 /* medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  header{
+  header {
     padding: 50px;
   }
-  .nav-bar{
+  .nav-bar {
     flex-direction: column;
   }
-  .nav-bar .title{
+  .nav-bar .title {
     margin-bottom: 10px;
   }
   .banner-content .banner-title {
     font-size: 30px;
   }
 
-  .teams-section{
+  .teams-section {
     flex-direction: column-reverse;
   }
-  .teams-section{
+  .teams-section {
     margin: 150px 50px;
   }
 
-  .achievements{
+  .achievements {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .facts-section > p{
+  .facts-section > p {
     padding-right: 0px;
   }
 
-
+  .sponsor-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 5rem;
+  }
+  .sponsor-content .primay-description {
+    padding: 20px;
+  }
 }
