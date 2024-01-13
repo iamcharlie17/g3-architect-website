@@ -116,12 +116,12 @@ main {
   margin: 50px;
   gap: 30px;
 }
-.feature-section .section-title{
+.feature-section .section-title {
   border-left: 5px solid #ff900e;
   padding-left: 25px;
   margin-bottom: 50px;
 }
-.card-section{
+.card-section {
   margin-top: 30px;
 }
 .card {
@@ -137,11 +137,11 @@ main {
   font-size: 20px;
   font-weight: 600;
 }
-.feature-images img{
+.feature-images img {
   margin-left: 80px;
   height: 90%;
 }
-.ten-years-badge{
+.ten-years-badge {
   color: #fff;
   background-color: #ff900e;
   border-radius: 10px;
@@ -151,11 +151,11 @@ main {
   position: relative;
   bottom: 100px;
 }
-.ten-years-badge h2{
+.ten-years-badge h2 {
   font-size: 65px;
   font-weight: 700;
 }
-.ten-years-badge p{
+.ten-years-badge p {
   font-size: 25px;
   font-weight: 500;
   margin-top: 10px;
@@ -234,7 +234,8 @@ footer p {
   header {
     padding: 50px 20px 50px 20px;
   }
-  .nav-bar {
+  .nav-bar,
+  .feature-section {
     flex-direction: column;
   }
   .nav-bar .title {
@@ -278,6 +279,17 @@ footer p {
   .sponsor-content {
     margin: 0;
   }
+
+  .feature-images img {
+    width: 100%;
+    margin: 0;
+  }
+  .ten-years-badge {
+    top: 100px;
+  }
+  .feature-section{
+    margin: 20px;
+  }
 }
 
 /* medium devices */
@@ -286,7 +298,8 @@ footer p {
   header {
     padding: 50px;
   }
-  .nav-bar {
+  .nav-bar, 
+  .feature-section {
     flex-direction: column;
   }
   .nav-bar .title {
@@ -321,5 +334,13 @@ footer p {
   }
   .sponsor-content .primay-description {
     padding: 20px;
+  }
+
+  .feature-images img{
+    margin: 0px;
+    width: 100%;
+  }
+  .ten-years-badge{
+    margin: 0 auto;
   }
 }
